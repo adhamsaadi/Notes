@@ -49,7 +49,6 @@ if (!$notes) {
     <?php foreach ($notes as $index => $note): ?>
         <div class="note">
             <p><?= htmlspecialchars($note['content']); ?></p>
-            <small>Created at: <?= $note['created_at']; ?></small>
             <div class="note-actions">
                 <!-- Edit Button -->
                 <a href="edit_note.php?index=<?= $index ?>" class="edit-btn">Edit</a>
